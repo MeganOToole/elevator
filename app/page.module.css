@@ -1,0 +1,96 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Stardos+Stencil:wght@400;700&display=swap');
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex; 
+  flex-direction: row;
+}
+
+.panelContainer {
+  width: 20rem;
+  padding: 1rem; 
+  background-color: lightgray;
+  border: .5rem solid grey;
+}
+
+.displayFloor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  padding-top: 1rem;
+  font-size: 6rem;
+  font-family: "Stardos Stencil", system-ui;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.floorBtn {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-color: black;
+  border: .2rem solid white;
+  font-size: 1.5rem;
+  font-family: sans-serif;
+}
+
+.door {
+  background-color: grey;
+}
+
+.doorOpenStyle {
+  background-color: grey;
+  width: 10%;
+  height: 100%;
+  transition: width 1s;
+}
+
+.doorClosedStyle {
+  background-color: grey;
+  width: 100%;
+  height: 100%; 
+  transition: width 1s;
+}
+
+.showUpArrow{
+  display: visible;
+}
+
+.hideUpArrow{
+  display: none; 
+}
+
+.showDownArrow{
+  display: visible; 
+}
+
+.hideDownArrow{
+  display: none;
+}
+
+.errorMsg {
+  margin-bottom: 1rem;
+  color: yellow;
+  animation: blinker 1.5s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
